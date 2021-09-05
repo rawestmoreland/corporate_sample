@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -45,30 +46,30 @@ module.exports = {
         apiURL: process.env.GATSBY_STRAPI_URL || "http://localhost:1337",
         collectionTypes: [
           {
-            name: 'page',
+            name: "page",
             api: {
               qs: {
-                _publicationState: 'preview',
-                _locale: 'all'
-              }
+                _publicationState: "preview",
+                _locale: "all",
+              },
             },
           },
         ],
         singleTypes: [
           {
-            name: 'global',
+            name: "global",
             api: {
               qs: {
-                _locale: 'en'
-              }
+                _locale: "en",
+              },
             },
           },
           {
-            name: 'global',
+            name: "global",
             api: {
               qs: {
-                _locale: 'fr'
-              }
+                _locale: "fr",
+              },
             },
           },
         ],

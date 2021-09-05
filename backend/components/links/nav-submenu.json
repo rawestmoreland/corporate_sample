@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_links_nav_submenus",
+  "info": {
+    "name": "Nav Submenu",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "submenu_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    }
+  }
+}

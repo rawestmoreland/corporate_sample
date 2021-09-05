@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_links_dropdown_links",
+  "info": {
+    "name": "Nav Menu Link",
+    "icon": "arrow-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "top_level_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    },
+    "nav_submenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.nav-submenu"
+    }
+  }
+}
